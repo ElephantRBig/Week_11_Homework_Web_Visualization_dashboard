@@ -1,0 +1,417 @@
+body {
+    background-color: lightgrey;
+}
+
+nav {
+    display: table;
+    background-color: white;
+    height: 75px;
+}
+nav ul {
+    display: table-row;
+	position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+nav ul a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#latitude {
+    background-color: rgb(39, 189, 235);
+
+ }
+
+#latitudeText {
+    font-size: 225%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 75px;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li {
+	position: relative;
+    display: inline-block;
+    display: table-cell;
+    width: 1%;
+	list-style-type: none;
+	text-align: center;
+}
+
+/* color of the block when hovered over 
+nav ul li:hover {
+	/*background-color: #357F7F;
+}*/
+
+/* colour of text when hovered over */
+nav ul li:hover a {
+    color: black;
+}
+nav ul ul{
+	display: none;
+	position: absolute;
+	background: white;
+    width: 100%; 
+}
+nav ul ul li {
+	width: 100%;
+    display: inline-block;
+}
+/* the hover drop down menu */
+nav ul li:hover > ul {
+    display: block;
+    width: 100px
+}
+
+
+
+/* Body Box */
+.body-container {
+    width: 1500px;
+    height: 700px
+}
+
+.body-box{
+    width: 1400px;
+    height: 700px;
+}
+
+.left-box{
+    width: 725px;
+    background-color: white;
+    height:500px;
+    float: left;
+    /* In order to move the box, we need to position relative*/
+    position: relative;
+    left: 0px;
+    top: 60px;
+}
+.right-box{
+    width: 600px;
+    height:450px;
+    background-color: white;
+    float: right;
+    /* In order to move the box, we need to position relative*/
+    position: relative;
+    left:50px;
+    top: 90px;
+
+}
+
+#left-box-title{
+    font-size: 40px;
+    color: rgb(39, 189, 235);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top:10px;
+    left: 20px
+}
+
+#right-box-title{
+    color: rgb(39, 189, 235);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top:10px;
+    left: 20px
+}
+
+.right-left-box{
+    color:black;
+    position: relative;
+    top: 100px;
+    left: -20px;
+}
+
+#main-pic {
+    height:250px;
+    width: 300px;
+    position: relative;
+    top:40px;
+    left:10px
+}
+
+.bottom-row{
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+/* left box content */
+#top-L-corner {
+    width: 50%;
+    height: 150px;
+    width: 220px;
+    position: relative;
+    top: 25px;
+    left: 60px
+}
+
+#top-R-corner {
+    width: 50%;
+    height: 150px;
+    width: 220px;
+    position: relative;
+    top: 25px;
+    left: 120px
+}
+#bottom-R-corner {
+    width: 50%;
+    height: 150px;
+    width: 220px;
+    position: relative;
+    top: 50px;
+    left: 120px
+}
+#bottom-L-corner {
+    width: 50%;
+    height: 150px;
+    width: 220px;
+    position: relative;
+    top: 50px;
+    left: 60px
+}
+
+
+
+@media (max-width: 680px){
+    
+    .body-container {
+        height: 750px;
+        width: 100%;
+    }
+    .body-box {
+        height: 7250px;
+        width: 680px;
+    }
+    .left-box{
+        height: 550px;
+        width: 90%;
+        clear: right
+    }
+
+    .right-box{
+        height:450px;
+        width: 90%;
+        float:left;
+        left: 0px;
+    }
+
+    #main-pic{
+        height: 200px; width: 200px;
+    }
+    .right-left-box{
+        width: 350px;
+        position: relative;
+        top: -110px;
+        left: 225px;
+    }
+    .bottom-row{
+        position: relative;
+        top:-60px;
+    }
+}
+
+/* Comparison Page */
+/*------------------------------------------------*/
+.comparison-box{
+    background-color: white;
+    height: 800px;
+    width: 1000px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+.comparison-box h1{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(39, 189, 235);
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+.comparison-box h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    position: relative;
+    top:25px;
+    left: 25px;
+
+}
+
+.top-row-Comp{
+    position: relative;
+    top:30px;
+    left: 200px;
+}
+.col1{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.col2{
+    position: relative;
+    top: 20px;
+    left: -90px
+}
+.bottom-row-Comp{
+    position: relative;
+    top:30px;
+    left: 200px;
+}
+.col3{
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.col4{
+    position: relative;
+    top: 20px;
+    left: -90px
+}
+
+#cloudiness-img{
+    position: relative;
+    top: 40px;
+    left:75px;
+}
+#humidity-img{
+    position: relative;
+    top: 40px;
+    left:75px;
+}
+#temp-img{
+    position: relative;
+    top: 50px;
+    left:75px;
+}
+#wind-img{
+    position: relative;
+    top:50px;
+    left:85px;
+}
+
+@media(max-width: 680px){
+    .comparison-box{
+        width:90%;
+        height: 1650px;
+        position: relative;
+        top: 50px;
+        left:0px
+    }
+    .col1{
+        position: relative;
+        top: 50px;
+    }
+    .col2{
+        position: relative;
+        top:350px;
+        left:0px;
+    }
+    #humidity-img{
+        position: relative;
+        top:100px;
+    }
+    .col3{
+        position: relative;
+        top:100px;
+        left:0px
+    }
+    #temp-img{
+        position: relative;
+        top:100px;
+    }
+    .col4{
+        position: relative;
+        top: 425px;
+        left: 0px;
+    }
+    #wind-img{
+        position: relative;
+        top: 175px;
+        left:70px
+    }
+}
+/* Wind */ 
+#wind-pic{
+    position: relative;
+    top: 25px;
+    left:125px
+}
+.bottom-row-wind{
+    width: 550px;
+    position: relative;
+    top:25px;
+    left:85px
+}
+@media(max-width:680px){
+    #wind-pic{
+        position: relative;
+        left:40px;
+    }
+    .bottom-row-wind{
+        position:relative;
+        top: 35px
+    }
+}
+/* Cloudiness */
+.bottom-row-cloud{
+    width: 650px;
+    position: relative;
+    top:35px; left: 45px;
+}
+@media(max-width:680px){
+    .bottom-row-cloud{
+        position: relative;
+        top: 25px;
+    }
+}
+/* Temperature */
+.bottom-row-temp{
+    width: 650px;
+    position: relative;
+    top:30px; left:55px;
+}
+/* humidity */
+.bottom-row-humid{
+    width: 650px;
+    position: relative;
+    top: 25px; left: 45px;
+}
+
+/* Data Page */
+.body-container-data{
+    width: 1000px; height: 25200px;
+    background-color: white;
+    position: relative;
+    top:50px
+}
+
+.data-box{
+    width: 90%;
+    height: 5000px;
+    position: relative;
+    top: 100px; left: 55px;
+}
+
+#data-box-header{
+    color: rgb(39, 189, 235);
+    position: relative;
+    top:50px;
+    left: 50px;
+}
+#data-explaination{
+    font-size: 20px;
+    position: relative;
+    top: 75px;
+    left: 50px;
+}
+
+.th{
+    font-size: 50px ;
+}

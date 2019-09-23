@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang = "en-us">
+    <head>
+        <meta charset = "UTF-08">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Bootstrap Visualization Dashboard</title> <!-- Setting up the title of the webpage -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel='stylesheet' href = "web_style.css"> 
+
+        </head>
+
+    <body>
+            <div class ="container-fluid header-container">
+            <!-- This is the header of the front-page-->
+            
+                <div class= "boxed header-box">
+                    <nav >
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li id="latitude"><a id="latitudeText" href="Landing_page.html">Latitude</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+
+                            <li id="nav-right"><a href="#">Plots</a>
+                                <ul>
+                                    <li><a href="Temperature.html">Max Temperature</a></li>
+                                    <li><a href="Humidity.html">Humidity</a></li>
+                                    <li><a href="Cloudiness.html">Cloudiness</a></li>
+                                    <li><a href="Wind_speed.html">Wind Speed</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav-right"><a href="Comparison.html">Comparison</a></li>
+                            <li id="nav-right"><a href="Data.html">Data</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class ="container-fluid body-container">
+                <div class = "boxed comparison-box">
+                    <h1>Comparison: Latitude vs X</h1>
+                    <h2>Click any plot for indepth analysis</h2>
+
+                    <!--Image headers-->
+                    <div class = "row top-row-Comp">
+                        <div class="col-md-6 col1">
+                            <h3>vs. Cloudiness</h3>
+                        </div>
+                        <div class="col-md-6 col2">
+                            <h3>vs. Humidity</h3>
+                        </div>
+                    </div>
+                    <!--Images-->
+                    <a href="Cloudiness.html"><img id="cloudiness-img" src="latitude_vs_cloudiness_graph.jpg" alt="latitude_cloudiness"></a>
+                    <a href="Humidity.html"><img id="humidity-img" src="latitude_vs_humidity_graph.jpg" alt ="latitude_humidity"></a>
+                    <div class="row bottom-row-Comp">
+                        <div class="col-md-6 col3">
+                            <h4>vs. Temperature</h4>
+                        </div>
+                        <div class="col-md-6 col4">
+                            <h4>vs. Wind Speed</h4>
+                        </div>
+                    </div>
+                    <a href="Temperature.html"><img id="temp-img" src="latitude_vs_temp_graph.jpg" alt ="latitude_temp"></a>
+                    <a href="Wind_speed.html"><img id="wind-img" src="latitude_vs_wind_speed.jpg" alt = "latitude_wind"></a>
+                </div>
+            </div>
+    </body>
+</html>
